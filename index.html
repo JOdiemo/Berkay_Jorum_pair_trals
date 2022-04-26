@@ -13,10 +13,18 @@
     <form id="survey-form">
       <table >
         <tr> 
-          <input type="text" id="name" name="name" required>
-          <input type="email" id="email" name="email" required>
-          <input type="number" id="number" name="number" required min="0" max="10">
-
+          <label id="name-label">Name</label>
+          <input type="text" id="name" name="name" placeholder="type your name" required>
+          <label id="email-label">Email</label>
+          <input type="email" id="email" name="email" placeholder="type your email"
+          required>
+          <label id="number-label">Number</label>
+          <input type="number" id="number" name="number" required min="0" max="10" placeholder="type your number">
+          <select id="dropdown"> <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select>
         </tr>
     </table>
     </form>
